@@ -53,7 +53,7 @@ Toute classe Java hérite toujours de la classe Object. Cette classe contient de
 
 Nous allons partir de notre programme Hello World pour lui ajouter quelques fonctionnalités.
 
-Pour cela, nous allons dupliquer cette classe en renommant le fichier en l'appelant LaClasse (toujours dans le même répertoire)
+Pour cela, nous allons dupliquer cette classe en renommant le fichier en l'appelant Exemple (toujours dans le même répertoire)
 
 Une fois cela fait, essayez de compiler et de lancer le programme. Que constatez-vous ?
 
@@ -63,7 +63,7 @@ Vous allez modifier le `main(String[])` en remplaçant le `system.out.println` c
 
 ```java
 public static void main(String[] args) {
-    Object instance = new LaClasse();
+    Object instance = new Exemple();
     System.out.println(instance); // Affiche
 }
 ```
@@ -74,7 +74,7 @@ Maintenant, vous allez modifier la classe en ajoutant une méthode nommée `toSt
 
 ```java
   public String toString(){
-    return "Je suis LaClasse:"+super.toString();
+    return "Je suis Exemple:"+super.toString();
   }
 ```
 
@@ -85,7 +85,7 @@ Relancez le programme. Que constatez-vous ?
 
 ```java
   public String toString(){
-    return "Je suis LaClasse (" + getClass() +"  ):"+ super.toString();
+    return "Je suis Exemple (" + getClass() +"  ):"+ super.toString();
   }
 ```
 
@@ -464,7 +464,7 @@ Cette classe se fera sur le modèle suivant:
 
 Implémentez cette classe de sorte que `toString()` renvoie une valeur ressemblant à `nomDeLaFleur(3)` (avec `nom = "nomDeLaFleur"` et `identifiant = 3`
 
-Essayez d'instancier cette classe à partir de la méthode `main(String[])` de `LaClasse` et d'afficher cette instance avec un `System.out.println(String)`.
+Essayez d'instancier cette classe à partir de la méthode `main(String[])` de `Exemple` et d'afficher cette instance avec un `System.out.println(String)`.
 
 Que constatez-vous ?
 
