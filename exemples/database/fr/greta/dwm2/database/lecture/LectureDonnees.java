@@ -1,4 +1,4 @@
-package fr.viacesi.ap2017.database.lecture;
+package fr.greta.dwm2.database.lecture;
 
 import java.util.Date;
 import java.sql.ResultSet;
@@ -6,9 +6,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.viacesi.ap2017.database.ConnectionMySQL;
-import fr.viacesi.ap2017.database.Personne;
-import fr.viacesi.ap2017.database.PersonneData;
+import fr.greta.dwm2.database.ConnectionMySQL;
+import fr.greta.dwm2.database.Personne;
+import fr.greta.dwm2.database.PersonneData;
 
 public class LectureDonnees {
 		

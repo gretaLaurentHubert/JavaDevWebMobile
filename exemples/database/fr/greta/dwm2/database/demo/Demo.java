@@ -1,4 +1,4 @@
-package fr.viacesi.ap2017.database.demo;
+package fr.greta.dwm2.database.demo;
 
 import java.sql.*;
 

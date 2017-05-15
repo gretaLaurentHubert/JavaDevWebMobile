@@ -1,4 +1,4 @@
-package fr.viacesi.ap2017.util;
+package fr.greta.dwm2.util;
 
 import java.util.InputMismatchException;
 import java.util.Map;

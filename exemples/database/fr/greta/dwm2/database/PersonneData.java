@@ -1,4 +1,4 @@
-package fr.viacesi.ap2017.database;
+package fr.greta.dwm2.database;
 
 import java.util.Date;
 

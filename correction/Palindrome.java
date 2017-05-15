@@ -1,4 +1,4 @@
-package fr.viacesi.pau.ap2017;
+package fr.greta.dwm2;
 
 public class Palindrome {
 	public static void main(String[] args) {

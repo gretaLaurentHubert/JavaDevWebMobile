@@ -1,4 +1,4 @@
-package fr.viacesi.pau.ap2017.date;
+package fr.greta.dwm2.date;
 
 public class Main {
 	/* Méthode main */

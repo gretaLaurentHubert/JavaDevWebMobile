@@ -1,4 +1,4 @@
-package fr.viacesi.autoradio;
+package fr.greta.dwm2.autoradio;
 
 public class Autoradio implements LectureCD, TunerRadio{
 	

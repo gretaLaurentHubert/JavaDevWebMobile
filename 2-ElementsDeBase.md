@@ -282,7 +282,7 @@ On utilise pour cela ces trois mots clés:
 
 ### Application
 
-Nous allons créer les classes suivantes dans le paquet `fr.viacesi.pau.ap2017.voyage`.
+Nous allons créer les classes suivantes dans le paquet `fr.greta.dwm2.voyage`.
 
 Commentez en indiquant pour chaque ligne:
 
@@ -294,7 +294,7 @@ Vous pouvez évidemment expérimenter dans votre IDE.
 Dans le fichier `Trousse.java`
 
 ```java
-package fr.viacesi.pau.ap2017.voyage;
+package fr.greta.dwm2.voyage;
 
 public class Trousse { //La classe est visible partout
 	public String publique ; //Est visible partout où sa classe est visible
@@ -322,7 +322,7 @@ public class Trousse { //La classe est visible partout
 Dans le fichier `SacDeVoyage.java` :
 
 ```java
-package fr.viacesi.pau.ap2017.voyage; //Meme paquet que Trousse
+package fr.greta.dwm2.voyage; //Meme paquet que Trousse
 
 class SacDeVoyage {
 	Trousse trousse = new Trousse();
@@ -344,7 +344,7 @@ Dans le fichier `TrousseDeToilette.java` :
 
 
 ```java
-package fr.viacesi.pau.ap2017.voyage;
+package fr.greta.dwm2.voyage;
 
 public class TrousseDeToilette extends Trousse {
 	int autreEntier ;
@@ -359,12 +359,12 @@ public class TrousseDeToilette extends Trousse {
 }
 ```
 
-Nous allons créer la classe suivante dans le paquet `fr.viacesi.pau.ap2017.transport`.
+Nous allons créer la classe suivante dans le paquet `fr.greta.dwm2.transport`.
 
 ```java
 
-package fr.viacesi.pau.ap2017.transport; //Un autre paquet
-import fr.viacesi.pau.ap2017.voyage.Trousse; //import de Trousse
+package fr.greta.dwm2.transport; //Un autre paquet
+import fr.greta.dwm2.voyage.Trousse; //import de Trousse
 class Voiture {
 	Trousse trousse = new Trousse();
 	int entier;
@@ -386,8 +386,8 @@ Puis la classe `TroussePremierSecours`:
 
 
 ```java
-package fr.viacesi.pau.ap2017.transport;
-import fr.viacesi.pau.ap2017.voyage.Trousse;
+package fr.greta.dwm2.transport;
+import fr.greta.dwm2.voyage.Trousse;
 public class TroussePremierSecours extends Trousse {
 	TroussePremierSecours(){
 		String chaine = publique;

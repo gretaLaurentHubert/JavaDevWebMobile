@@ -1,4 +1,4 @@
-package fr.viacesi.pau.ap2017.nature.aveclist;
+package fr.greta.dwm2.nature.aveclist;
 
 import java.util.List;
 import java.util.ArrayList;

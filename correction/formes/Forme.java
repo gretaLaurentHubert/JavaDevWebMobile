@@ -1,4 +1,4 @@
-package fr.viacesi.pau.ap2017.formes;
+package fr.greta.dwm2.formes;
 public abstract class Forme {
 	private String type ;
 	private String nom ;

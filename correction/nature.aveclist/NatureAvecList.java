@@ -1,6 +1,6 @@
-package fr.viacesi.pau.ap2017.nature.aveclist;
+package fr.greta.dwm2.nature.aveclist;
 
-import fr.viacesi.pau.ap2017.nature.Fleur;
+import fr.greta.dwm2.nature.Fleur;
 
 public class NatureAvecList implements ObservateurChamps {
 	@Override

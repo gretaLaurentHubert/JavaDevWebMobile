@@ -13,14 +13,14 @@ Nous allons installer Eclipse comme environnement de développement de base.
 
 ## Premiers programmes
 ### Hello World avec Java
-Notre premier programme va être un Hello World. On le crée dans un fichier nommé HelloWorld.java et situé dans un répertoire fr/viacesi/pau/ap2017.
+Notre premier programme va être un Hello World. On le crée dans un fichier nommé HelloWorld.java et situé dans un répertoire fr/greta/dwm2.
 
 ```java
 /*
  * Entete
  */
 
-package fr.viacesi.pau.ap2017 ;
+package fr.greta.dwm2 ;
 
 /**
  * Ceci est une classe
@@ -455,7 +455,7 @@ Cette instance est un exemplaire indépendant des autres objets de cette classe.
 
 ### Création d'une nouvelle classe
 
-Vous allez implémenter une classe nommée `Fleur` dans le paquet `fr.viacesi.pau.ap2017.nature`
+Vous allez implémenter une classe nommée `Fleur` dans le paquet `fr.greta.dwm2.nature`
 
 Cette classe se fera sur le modèle suivant:
 
@@ -493,7 +493,7 @@ Créez ainsi plusieurs instances de fleur et affichez-les.
 La classe Champ sera codée de la manière suivante:
 
 ```java
-package fr.viacesi.pau.ap2017.nature;
+package fr.greta.dwm2.nature;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -573,7 +573,7 @@ Le code que nous avions écrit précédemment ne fonctionne plus. Nous allons ma
 
 
 ```java
-package fr.viacesi.pau.ap2017.nature;
+package fr.greta.dwm2.nature;
 
 public class FabriqueFleur {
 	private int identifiant = 0;

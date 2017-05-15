@@ -17,7 +17,7 @@ Nous allons donc découvrir le fonctionnement de cette API et voir comment on pe
 Pour commencer, vous allez écrire le programme suivant et le lancer:
 
 ```java
-package fr.viacesi.ap2017.database;
+package fr.greta.dwm2.database;
 
 import java.sql.*;
 
@@ -161,7 +161,7 @@ mysql> select * from personne ;
 Observez et analysez cet exemple :
 
 ```java
-package fr.viacesi.ap2017.database;
+package fr.greta.dwm2.database;
 
 import java.sql.*;
 
@@ -226,7 +226,7 @@ public class ConnectionMySQL {
 Méthode `main` :
 
 ```java
-package fr.viacesi.ap2017.database;
+package fr.greta.dwm2.database;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -315,7 +315,7 @@ public interface Personne{
 La classe suivante montre comment écrire dans une base de données:
 
 ```java
-package fr.viacesi.ap2017.database.lecture;
+package fr.greta.dwm2.database.lecture;
 
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -324,10 +324,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import fr.viacesi.ap2017.database.ConnectionMySQL;
-import fr.viacesi.ap2017.database.DateSimple;
-import fr.viacesi.ap2017.database.Personne;
-import fr.viacesi.ap2017.util.GestionMenu;
+import fr.greta.dwm2.database.ConnectionMySQL;
+import fr.greta.dwm2.database.DateSimple;
+import fr.greta.dwm2.database.Personne;
+import fr.greta.dwm2.util.GestionMenu;
 
 public class Ecriture {
 	//INSERT INTO `personne`(`nom`, `prenom`, `dnaissance`) VALUES ('RABHI','Pierre','1938-05-29')
@@ -429,9 +429,9 @@ public class Ecriture {
 
 Le code source des classes qu'elle utilise est disponible [ici](exemples/database) :
 
-* [GestionMenu.java](exemples/database/fr/viacesi/ap2017/util/GestionMenu.java)
+* [GestionMenu.java](exemples/database/fr/greta/dwm2/util/GestionMenu.java)
 
-* [DateSimple.java](exemples/database/fr/viacesi/ap2017/database/DateSimple.java)
+* [DateSimple.java](exemples/database/fr/greta/dwm2/database/DateSimple.java)
 
 Voir aussi cette page : [Retrieving and Modifying Values from Result Sets](http://docs.oracle.com/javase/tutorial/jdbc/basics/retrieving.html)
 

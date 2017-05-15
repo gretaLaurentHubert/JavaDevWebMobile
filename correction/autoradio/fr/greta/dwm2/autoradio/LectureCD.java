@@ -1,4 +1,4 @@
-package fr.viacesi.autoradio;
+package fr.greta.dwm2.autoradio;
 
 public interface LectureCD {
 	/**

@@ -1,4 +1,4 @@
-package fr.viacesi.ap2017.database;
+package fr.greta.dwm2.database;
 
 public class DateSimple {
 	private int jour; //Attribut d'instance

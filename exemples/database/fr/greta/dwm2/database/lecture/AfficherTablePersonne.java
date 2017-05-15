@@ -1,10 +1,10 @@
-package fr.viacesi.ap2017.database.lecture;
+package fr.greta.dwm2.database.lecture;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
-import fr.viacesi.ap2017.database.ConnectionMySQL;
+import fr.greta.dwm2.database.ConnectionMySQL;
 
 public class AfficherTablePersonne {	
 

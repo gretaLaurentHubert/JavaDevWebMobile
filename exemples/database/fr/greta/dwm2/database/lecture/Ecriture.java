@@ -1,4 +1,4 @@
-package fr.viacesi.ap2017.database.lecture;
+package fr.greta.dwm2.database.lecture;
 
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -7,10 +7,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import fr.viacesi.ap2017.database.ConnectionMySQL;
-import fr.viacesi.ap2017.database.DateSimple;
-import fr.viacesi.ap2017.database.Personne;
-import fr.viacesi.ap2017.util.GestionMenu;
+import fr.greta.dwm2.database.ConnectionMySQL;
+import fr.greta.dwm2.database.DateSimple;
+import fr.greta.dwm2.database.Personne;
+import fr.greta.dwm2.util.GestionMenu;
 
 public class Ecriture {
 	//INSERT INTO `personne`(`nom`, `prenom`, `dnaissance`) VALUES ('RABHI','Pierre','1938-05-29')

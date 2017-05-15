@@ -259,7 +259,7 @@ Créer ses propres exceptions
 On peut générer ses propres exceptions:
 
 ```java
-    package fr.viacesi.ap2017.humain;
+    package fr.greta.dwm2.humain;
 
     public class TailleInvalideException extends Exception {
         public TailleInvalideException() {
@@ -280,7 +280,7 @@ On peut générer ses propres exceptions:
 Que l’on va utiliser dans notre code:
 
 ```java
-package fr.viacesi.ap2017.humain;
+package fr.greta.dwm2.humain;
 
     public class Humain {
         private int taille;
