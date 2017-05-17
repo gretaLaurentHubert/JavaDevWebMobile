@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>100</x>
-      <y>120</y>
+      <x>80</x>
+      <y>100</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -23,8 +23,8 @@ asseoir(Humain h) : void</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>170</y>
+      <x>400</x>
+      <y>150</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -34,8 +34,8 @@ asseoir(Humain h) : void</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>110</y>
+      <x>400</x>
+      <y>90</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -45,8 +45,8 @@ asseoir(Humain h) : void</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>220</y>
+      <x>400</x>
+      <y>200</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -56,8 +56,8 @@ asseoir(Humain h) : void</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>120</y>
+      <x>280</x>
+      <y>100</y>
       <w>140</w>
       <h>50</h>
     </coordinates>
@@ -69,8 +69,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>190</y>
+      <x>280</x>
+      <y>170</y>
       <w>140</w>
       <h>50</h>
     </coordinates>
@@ -82,8 +82,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>230</y>
+      <x>280</x>
+      <y>210</y>
       <w>140</w>
       <h>50</h>
     </coordinates>
@@ -95,8 +95,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>290</y>
+      <x>400</x>
+      <y>270</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -106,8 +106,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>280</y>
+      <x>280</x>
+      <y>260</y>
       <w>140</w>
       <h>50</h>
     </coordinates>
@@ -117,8 +117,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>500</y>
+      <x>170</x>
+      <y>480</y>
       <w>220</w>
       <h>110</h>
     </coordinates>
