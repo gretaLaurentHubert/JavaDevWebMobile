@@ -92,7 +92,7 @@ Les attributs d'une classe sont les éléments contenus par une classe.
 Dans l'exemple précédent, l'attribut `nom` permet de stocker le nom de la Forme sous forme d'une chaîne de caractère.
 
 ### Attributs d'instance
-La valeur d'un attribut est propre à une instance de classe.
+La valeur d'un attribut est propre à une instance de classe. Chaque exemplaire d'une classe conservera une valeur spécifique pour cet attribut.
 
 Testez le code suivant:
 ```java
@@ -106,7 +106,9 @@ System.out.println(formeB); //Forme B
 ```
 
 ### Attributs de classe
-Il est possible de définir des attributs communs à toutes les instances d'une classe. Ce sont les attributs d'instance.
+Il est possible de définir des attributs communs à toutes les instances d'une classe. Ce sont les attributs de classe.
+
+Ils sont définis en utilisant le mot clé `static`.
 
 ```java
 class Forme{
