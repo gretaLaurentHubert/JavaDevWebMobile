@@ -318,6 +318,7 @@ public class ExerciceChaine {
 }
 
 ```
+#### Méthode equals
 
 Remplacez la méthode `testChaines(String, String)` par la suivante:
 
@@ -336,6 +337,65 @@ Que constatez-vous ?
 Allez voir dans la Javadoc à quoi correspond la méthode `equals(Object)`.
 
 Pourquoi est-elle utile ?
+
+
+#### Opérateur ternaire
+
+Etudiez maintenant le fonctionnement de cette version du programme:
+
+```java
+public void testChaines(String a, String b){
+    if( a == null ? b == null : a.equals(b) ){
+        System.out.println("Les chaînes '"+ a + "' et '"+b+ "' sont les mêmes");
+    }
+    else{
+        System.out.println("Les chaînes '"+ a + "' et '"+b+ "' sont différentes");
+    }
+}
+```
+L'opérateur ternaire `? :` qui est utilisé ici fonctionne comme suit.
+
+Le code :
+
+```java
+x = 1 ;
+a = (x == 1 ? 2 : 3);
+System.out.println(a);
+```
+Conduit à l'affichage suivant: `2`
+
+Le code :
+
+```java
+x = 4 ;
+a = (x == 1 ? 2 : 3);
+System.out.println(a);
+```
+Conduit à l'affichage suivant: `3`
+
+Le code équivalent à `(x == 1 ? 2 : 3)` est :
+
+```java
+int f(int x){
+  if(x == 1){
+    return 2;
+  }else{
+    return 3;
+  }
+}
+```
+
+Les deux codes suivants sont donc équivalents:
+
+```java
+//Première version
+a = (x == 1 ? 2 : 3);
+
+//Seconde version
+a = f(x);
+```
+
+Quel est l'intérêt de cette notation ?
 
 ### Quelques méthodes pour utiliser les String
 Exécutez le programme suivant:
