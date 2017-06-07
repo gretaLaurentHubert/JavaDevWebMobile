@@ -583,3 +583,10 @@ L'affichage d'une forme se fera de cette manière:
 ```
 triangle/bermudes : l'aire vaut 500
 ```
+
+
+## Exemples de solutions
+
+### Validité d'une date
+
+Un exemple (partiel) de solution est dans les fichiers [Date.java](exemples/GestionDate/ProgrammePartiel/Date.java) et [ValiditeDate.java](exemples/GestionDate/ProgrammePartiel/ValiditeDate.java).
