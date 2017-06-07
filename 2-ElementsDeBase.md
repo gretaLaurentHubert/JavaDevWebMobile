@@ -113,7 +113,7 @@ Ils sont définis en utilisant le mot clé `static`.
 ```java
 class Forme{
   String nom;
-  static int compteurForme;
+  static int compteur;
 }
 
 ...
