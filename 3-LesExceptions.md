@@ -471,6 +471,7 @@ Un entier naturel est un entier positif ou nul.
 
 Le tableau d'entiers aura une taille fixée (par ex: 5).
 1. L'utilisateur pourra choisir :
+   1. d'afficher le contenu du tableau (sous la forme `5 6 7 8 9` ou `3 4`)
    1. de saisir un nouveau nombre
    1. de supprimer le dernier nombre du tableau
    1. de vider le tableau
