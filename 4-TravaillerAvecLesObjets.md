@@ -56,9 +56,11 @@ class Automobile implements VehiculeAMoteur, VehiculeAQuatreRoues{
 ```
 
 
+#### Exemple d'utilisation d'une interface
+
+
 Voir le cours [https://en.wikibooks.org/wiki/Java_Programming/Interfaces](https://en.wikibooks.org/wiki/Java_Programming/Interfaces)
 
-#### Exemple d'utilisation d'une interface
 
 ```java
 package interfaces;
