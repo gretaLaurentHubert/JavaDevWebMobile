@@ -59,106 +59,6 @@ class Automobile implements VehiculeAMoteur, VehiculeAQuatreRoues{
 Voir le cours [https://en.wikibooks.org/wiki/Java_Programming/Interfaces](https://en.wikibooks.org/wiki/Java_Programming/Interfaces)
 
 
-### Application
-Prenons un autre exemple concret: un autoradio.
-
-Un autoradio  :
-* permet d'écouter la radio: il fournira une interface (des boutons) permettant de régler la station d'écoute et de mémoriser certaines fréquences
-* fournit des commandes de base:
-* * régler le volume
-* * allumer/éteindre
-* écouter un CD:
-* * il fournit un lecteur (une interface d'accès entre les données stockées sur un CD et l'appareil)
-* * des boutons permettant de naviguer et commander la lecture/pause/éjection du CD
-* lire une clef USB contenant des MP3
-
-Chaque item principal ci-dessus peut être représenté sous la forme d'une interface.
-
-
-![Autoradio](images/Autoradio.png)
-
-
-Ce qui est important ici est qu'une classe donnée puisse être vue comme pouvant avoir plusieurs fonctionnalités regroupées par thème (une interface <=> un thème).
-
-#### Ecriture du code
-
-Créez une classe `Autoradio` qui implémente ces deux interfaces.
-
-Un menu affichera le statut de l'instance d'`Autoradio`. Par exemple:
-
-```
-Lecture de la piste 3 du CD
-```
-
-ou
-
-```
-Ecoute de la radio FM : 102.3MHz
-```
-Le menu permettra de changer de mode:
-
-```
-R. passage au mode Tuner Radio
-C. passage au mode CD
-```
-
-Il affichera les fonctions disponibles à activer:
-
-```
-A. Augmenter volume
-D. Diminuer volume
-
-1. lire CD
-2. pause CD
-3. Morceau CD suivant
-4. Morceau CD précédent
-
-```
-
-Le choix d'un des nombres fera appel à une des méthodes de l'interface correspondante.
-
-Réalisez le diagramme d'activité correspondant.
-
-Ecrivez le code des interfaces permettant de réaliser les fonctions *Tuner* et *Lecteur CD*
-
-Chaque méthode, au moment de son appel fera un affichage dans la console.
-
-```
-Bouton morceau suivant appuyé
-Bouton volume modifié: niveau 4
-```
-
-
-#### Lecteur MP3
-
-Modélisez et codez l'interface de lecture des MP3 : `LecteurMP3`
-
-Ajoutez cette interface à une sous-classe de la classe `Autoradio` : la classe `AutoradioMP3`.
-
-Implémentez les méthodes correspondantes.
-
-Vous modifierez la méthode permettant d'afficher le menu de la classe `Autoradio` (et pas celle de la classe `AutoradioMP3` pour afficher les éléments correspondants à l'interface `LecteurMP3`
-
-Et ce uniquement si elle est implémentée par l'instance de l'objet en cours.
-
-Pour tester cela, vous utiliserez le mot-clé `instanceof` :
-
-```java
-if (this instanceof LecteurMP3){
-  afficherMenuMP3();
-}
-
-```
-
-#### Format des fichiers Audio
-
-Les formats de fichiers audio possible sur une clef USB sont:
-* MP3
-* OggVorbis
-* WMA
-* AAC
-
-Faites une modélisation UML puis codez la prise en compte de ces formats.
 
 ### Le modèle de conception Observateur
 
@@ -259,7 +159,7 @@ public class Nature implements ObservateurChamps {
 	public static void main(String[] args) {
 		Nature nature = new Nature();
 		Champs champs = new Champs();
-    
+
 		champs.enregistrerObservateur(nature);
 		champs.addObjet(new Fleur("Paquerette", 1));
 		champs.addObjet(new Fleur("Jonquille", 2));
@@ -277,10 +177,106 @@ Le champs a été modifié
 Champ [Paquerette(1)Jonquille(2)]
 ```
 
+
 #### Application
 
 Reprenez le code des classes `Date` et `ValiditeDate`.  Adaptez y un observateur (`ObservateurDate`) et faites en sorte que tout changement d'une instance de `Date` affiche un message sur la console.
 
+### Interface "Utilisateur"
+Prenons un autre exemple concret: un autoradio.
 
-## Exceptions
-Prochain chapitre: [Exceptions.md](Exceptions.md)
+Un autoradio  :
+* permet d'écouter la radio: il fournira une interface (des boutons) permettant de régler la station d'écoute et de mémoriser certaines fréquences
+* fournit des commandes de base:
+* * régler le volume
+* * allumer/éteindre
+* écouter un CD:
+* * il fournit un lecteur (une interface d'accès entre les données stockées sur un CD et l'appareil)
+* * des boutons permettant de naviguer et commander la lecture/pause/éjection du CD
+* lire une clef USB contenant des MP3
+
+Chaque item principal ci-dessus peut être représenté sous la forme d'une interface.
+
+
+![Autoradio](images/Autoradio.png)
+
+
+Ce qui est important ici est qu'une classe donnée puisse être vue comme pouvant avoir plusieurs fonctionnalités regroupées par thème (une interface <=> un thème).
+
+#### Modification du code
+
+Dans le répertoire [exemples/autoradio](exemples/autoradio), récupérer le code et le placer dans un **nouveau** projet.
+
+La classe `Main` permet d'exécuter le code.
+
+Etudier la classe `Autoradio` qui implémente l'interface `LectureCD`.
+
+L'objectif de cet exercice est d'implémenter l'interface `TunerRadio` dans la classe `Autoradio`.
+
+Faites d'abord quelques essais sans modifier le code.
+
+La menu affichera le statut de l'instance d'`Autoradio`. Par exemple:
+
+```
+Lecture de la piste 3 du CD
+```
+
+ou
+
+```
+Ecoute de la radio FM : 102.3MHz
+```
+Le menu permettra de changer de mode:
+
+```
+R. passage au mode Tuner Radio
+C. passage au mode CD
+```
+
+Il affichera les fonctions disponibles à activer:
+
+```
+A. Augmenter volume
+D. Diminuer volume
+
+1. lire CD
+2. pause CD
+3. Morceau CD suivant
+4. Morceau CD précédent
+
+```
+
+Le choix d'un des nombres fera appel à une des méthodes de l'interface correspondante.
+
+Réalisez le diagramme d'activité correspondant.
+
+Ecrivez le code des interfaces permettant de réaliser les fonctions *Tuner* et *Lecteur CD*
+
+Chaque méthode, au moment de son appel fera un affichage dans la console.
+
+```
+Bouton morceau suivant appuyé
+Bouton volume modifié: niveau 4
+```
+
+
+#### Lecteur MP3
+
+Modélisez et codez l'interface de lecture des MP3 : `LecteurMP3`
+
+Ajoutez cette interface à une sous-classe de la classe `Autoradio` : la classe `AutoradioMP3`.
+
+Implémentez les méthodes correspondantes.
+
+Vous modifierez la méthode permettant d'afficher le menu de la classe `Autoradio` (et pas celle de la classe `AutoradioMP3` pour afficher les éléments correspondants à l'interface `LecteurMP3`
+
+Et ce uniquement si elle est implémentée par l'instance de l'objet en cours.
+
+Pour tester cela, vous utiliserez le mot-clé `instanceof` :
+
+```java
+if (this instanceof LecteurMP3){
+  afficherMenuMP3();
+}
+
+```
