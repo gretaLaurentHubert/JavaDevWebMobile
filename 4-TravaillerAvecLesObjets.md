@@ -58,7 +58,40 @@ class Automobile implements VehiculeAMoteur, VehiculeAQuatreRoues{
 
 Voir le cours [https://en.wikibooks.org/wiki/Java_Programming/Interfaces](https://en.wikibooks.org/wiki/Java_Programming/Interfaces)
 
+#### Exemple d'utilisation d'une interface
 
+```java
+package interfaces;
+
+public class Interfaces {
+
+    public static void main(String[] args) {
+        SimpleInterface simpleInterface  = new ClassWithInterface();
+        System.out.println( simpleInterface.method1("") );
+
+        doAction(new OneClass());
+        doAction(new AnotherClass());
+    }
+
+    public static void doAction(SimpleInterface anObject) {
+        anObject.method1("Hello!");
+    }
+}
+
+class OneClass implements SimpleInterface {
+    public int method1(String parameter) {
+        System.out.println("un");
+        return 1;
+    }
+}
+
+class AnotherClass  implements SimpleInterface {
+    public int method1(String parameter) {
+        System.out.println("deux");
+        return 2;
+    }
+}
+```
 
 ### Le modèle de conception Observateur
 
