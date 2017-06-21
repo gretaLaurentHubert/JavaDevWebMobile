@@ -144,6 +144,7 @@ Il vous est possible d'utiliser les collections pour stocker les types primitifs
 |short 	| Short     |
 |double |Double     |
 
+Ces réceptacles sont des objets *boîtes* (box) dans lesquelles sont stockées les valeurs primitives afin qu'elles soient prises en charge par les collections.
 
 ### Interface List et classes associées
 
@@ -158,7 +159,8 @@ public class IntBoxing {
 		int monNombrePrimitif = 24;
 		listeInt.add(monNombrePrimitif);
 	}
-//... (le reste du code est identique à l'exemple précédent
+  //... (le reste du code est identique à l'exemple précédent
+}
 ```
 
 La classe `LinkedList` est une liste chaînée. Selon le cas, son mode de fonctionnement sera plus performant que si on utilise une `ArrayList`.
@@ -171,30 +173,59 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class PerformancesList {
-	public static final int MAX_VALUE = 1000000;
 
-	List<Integer> arrayList = new ArrayList<>();
-	List<Integer> linkedList = new LinkedList<>();
+    public static final int MAX_VALUE = 100000;
 
-	public void init(List<Integer> liste){  
-		for (int i = 0; i < MAX_VALUE; i++) {
-			liste.add(0, i);
-		}
-	}
+    List<Integer> arrayList = new ArrayList<>();
+    List<Integer> linkedList = new LinkedList<>();
 
-	public static void main(String[] args) {
-		PerformancesList pl = new PerformancesList();
-		long debutOp = System.nanoTime();
-		pl.init(pl.linkedList);
-		long finOp = System.nanoTime();
-		System.out.println("Linked :" + (finOp - debutOp)/1000000 + "ms");
-		debutOp = System.nanoTime();
-		pl.init(pl.linkedList);
-		finOp = System.nanoTime();
-		System.out.println("Array :" + (finOp - debutOp)/1000000 + "ms");
-	}
+    public void insert(List<Integer> liste, int maxValue) {
+        for (int i = 0; i < maxValue; i++) {
+            liste.add(0, i);
+        }
+    }
+
+    public void parcours(List<Integer> liste, int maxValue) {
+        for (int i = 0; i < maxValue; i++) {
+            Integer integer = liste.get(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        PerformancesList pl = new PerformancesList();
+        pl.insert(pl.arrayList, 10);
+        pl.insert(pl.linkedList, 10);
+
+        System.out.println("-- Insertion");
+        long debutOp = System.nanoTime();
+        pl.insert(pl.linkedList, MAX_VALUE);
+        long finOp = System.nanoTime();
+        System.out.println("Linked :" + (finOp - debutOp) / 1000000 + "ms");
+
+        debutOp = System.nanoTime();
+        pl.insert(pl.arrayList, MAX_VALUE);
+        finOp = System.nanoTime();
+        System.out.println("Array :" + (finOp - debutOp) / 1000000 + "ms");
+
+        pl.parcours(pl.arrayList, 10);
+        pl.parcours(pl.linkedList, 10);
+
+        System.out.println("-- Parcours");
+        debutOp = System.nanoTime();
+        pl.parcours(pl.linkedList, MAX_VALUE);
+        finOp = System.nanoTime();
+        System.out.println("Linked :" + (finOp - debutOp) / 1000000 + "ms");
+
+        debutOp = System.nanoTime();
+        pl.parcours(pl.arrayList, MAX_VALUE);
+        finOp = System.nanoTime();
+        System.out.println("Array :" + (finOp - debutOp) / 1000000 + "ms");
+
+    }
 }
 ```
+
+Que constatez-vous à l'exécution de ce code ?
 
 ## Boucles for(;;) et for-each
 
@@ -232,27 +263,27 @@ Avant d'écrire ce programme, établissez la représentation UML sous forme de d
 
 Pour cela, nous allons définir une classe `Personne` qui permette de stocker:
 
-* un nom
-* un prénom
-* une liste d'adresses postales
-* une liste de numéros de téléphone
-* une liste d'adresses électroniques
+ - un nom
+ - un prénom
+ - une liste d'adresses postales
+ - une liste de numéros de téléphone
+ - une liste d'adresses électroniques
 
 Dans la liste d'adresses postale, chaque adresse pourra comporter les éléments suivants:
 
-* numéro de rue
-* nom de la voie
-* complément d'adresse
-* type de la voie
-* code postal
-* localité
+ - numéro de rue
+ - nom de la voie
+ - complément d'adresse
+ - type de la voie
+ - code postal
+ - localité
 
 Le carnet d'adresse pourra gérer plusieurs personnes. Pour cela, une liste.
 
 Enfin, vous devrez pouvoir faire afficher dans la console (en implémentant un menu):
-* soit la liste de toutes les personnes du carnet d'adresse
-* soit les informations concernant une seule personne
-* soit les informations concernant toutes les entrées du carnet
+ - soit la liste de toutes les personnes du carnet d'adresse
+ - soit les informations concernant une seule personne
+ - soit les informations concernant toutes les entrées du carnet
 
 ## Les Map
 Une `Map` permet de stocker des éléments en les référençant via une clef d'accès.
