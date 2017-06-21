@@ -13,8 +13,8 @@ public class GestionMenu {
 	}
 	
 	private boolean continuer = true;
+        
 	public void gererAutoradio(){
-		
 		while(continuer){
                     System.out.println("---- AUTORADIO ----");
 			System.out.println(autoradio.getMenu());
@@ -28,12 +28,18 @@ public class GestionMenu {
 		//les minuscules soient aussi prises en compte
 		
 		if(autoradio.estAllume()){
-			switch(valeur){
+                    switch(valeur){
 			case "A": autoradio.augmenterVolume(); break ;
 			case "D": autoradio.diminuerVolume(); break ;
 			case "O": autoradio.eteindre(); break;
 			case "C": autoradio.setMode(Autoradio.LECTEUR_CD); break;
-			}
+                        case "1":   
+                        case "2":   
+                        case "3":   
+                        case "4": 
+                            autoradio.gererValeur(valeur);
+                                    
+                    }
 		}else{
 			switch(valeur){
 			case "O": autoradio.allumer(); break ;

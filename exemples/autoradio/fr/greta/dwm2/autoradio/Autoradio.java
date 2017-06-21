@@ -68,6 +68,21 @@ public class Autoradio implements LectureCD{
 		}
 		return menuPrincipal;
 	}
+        
+        public void gererValeur(String valeur){
+            if(getMode() == LECTEUR_CD){
+                switch(valeur){
+                        case "1":   lire();
+                                    break;
+                        case "2":   pause();
+                                    break;
+                        case "3":   prochainePiste();
+                                    break;
+                        case "4":   pistePrecedente();
+                                    break;
+                }       
+            }
+        }
 
 	@Override
 	public void lire() {
