@@ -52,11 +52,12 @@ public class Autoradio implements LectureCD{
 		if(allume){
 			switch(mode){
 			case LECTEUR_CD:
-				System.out.println(getMenuCD());
+				menuPrincipal += getMenuCD();
 			}
 			
 			menuPrincipal +=  "A. Augmenter le volume\n" 
 					+ "D. Diminuer le volume\n";
+					
 			if(this instanceof LectureCD){
 				menuPrincipal += "C. mode CD\n";
 			}
