@@ -12,7 +12,9 @@ Nous allons donc découvrir le fonctionnement de cette API et voir comment on pe
 
 ## Accès à une base MySQL
 
-### Installation
+## Installation d'une base de test
+
+Vous pouvez soit utiliser [ce fichier](demojava.sql), soit suivre les instructions ci-dessous.
 
 Pour commencer, vous allez écrire le programme suivant et le lancer:
 
