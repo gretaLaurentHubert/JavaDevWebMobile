@@ -85,7 +85,7 @@ Relancez le programme: aucune erreur n'apparaît, vous avez chargé un pilote po
 
 #### Création d'une base de données de test
 
-Vous pouvez soit utiliser [ce fichier](demojava.sql), soit suivre les instructions ci-dessous.
+Vous pouvez soit utiliser [ce fichier](exemples/demojava.sql), soit suivre les instructions ci-dessous.
 
 ```sql
 mysql> create database demojava ;
